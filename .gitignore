@@ -1,0 +1,29 @@
+# Build outputs (reproducible from source)
+/build/
+*.rbxl
+*.rbxlx
+*.rbxm
+*.rbxmx
+/sourcemap.json
+
+# Node tooling (the repo has zero npm dependencies; this is defensive)
+node_modules/
+
+# Local scratch and logs
+/artifacts/scratch/
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+
+# Secrets must never be committed (see 11-SECURITY.md)
+.env
+.env.*
+*.key
+*.pem
+
+# Pinned local binaries installed by tools/bootstrap (never committed)
+/tools/bin/

@@ -1,0 +1,5 @@
+std = "roblox"
+
+# vendor/ and generated/ are excluded from lint runs by tools/lint-policy.mjs and by the
+# selene invocation in docs/TOOLCHAIN.md (selene --no-exclude is never used).
+exclude = ["vendor/**", "generated/**"]

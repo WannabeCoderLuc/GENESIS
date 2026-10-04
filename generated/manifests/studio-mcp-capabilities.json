@@ -1,0 +1,38 @@
+{
+  "manifestVersion": 1,
+  "recordedOn": "2026-10-04",
+  "note": "Discovered through the live Roblox_Studio MCP server in this session. Entries marked invoked were called and returned content; listed means the server advertised it but it has not been invoked yet. Re-discover at the start of every Studio-dependent task.",
+  "studio": {
+    "studioId": "8978c8bc-b110-47f2-b72f-0f2f2c13605e",
+    "name": "Genesis",
+    "placeId": 121145903454904,
+    "gameId": 10769406769,
+    "placeVersion": 2,
+    "studioVersion": "0.741.19.7411056",
+    "dataModelName": "Place2",
+    "modeAtDiscovery": "Edit",
+    "httpEnabled": true,
+    "streamingEnabled": true,
+    "placeScriptsAtDiscovery": 0
+  },
+  "tools": [
+    "list_roblox_studios", "get_studio_state", "execute_luau", "start_stop_play", "get_console_output",
+    "search_game_tree", "inspect_instance", "script_read", "script_grep", "script_search", "multi_edit",
+    "http_get", "skill", "wait_job_finished", "screen_capture", "insert_asset", "search_asset",
+    "character_navigation", "user_keyboard_input", "user_mouse_input", "generate_material", "generate_mesh",
+    "generate_procedural_model", "generate_texture", "segment_mesh", "store_image", "upload_image", "subagent"
+  ],
+  "skills": {
+    "invoked": ["rbx-unit-test", "rbx-create-skill", "rbx-docs-search", "rbx-luau-heap-profiling"],
+    "listed": [
+      "rbx-debug", "rbx-perf-profiling", "rbx-scene-analysis", "rbx-device-simulator-lua",
+      "rbx-configs-experimentation", "rbx-convert-to-streaming"
+    ],
+    "remarks": [
+      "rbx-luau-heap-profiling is absent from the skill tool's parameter enum but is retrievable by name.",
+      "create_skill / edit_skill tools are not exposed by this server; custom skills are written as reviewed files under .agents/skills/.",
+      "Studio exposes no API for built-in Luau diagnostics (only ScriptEditorService analysis-callback registration), so strict type checking needs an external analyzer."
+    ]
+  },
+  "networkPolicy": "http_get allows only create.roblox.com docs/cloud/performance pages and the Roblox/libmp GitHub repo; HttpService from execute_luau reached 127.0.0.1 loopback successfully."
+}

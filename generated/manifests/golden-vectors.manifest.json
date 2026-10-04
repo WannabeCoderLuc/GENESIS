@@ -1,0 +1,34 @@
+{
+  "manifestVersion": 1,
+  "vectorSetVersion": 1,
+  "referenceAlgorithms": [
+    "UC-HASH64-V1",
+    "UC-SEED-V1",
+    "UC-RNG-V1",
+    "UC-CANON-V1"
+  ],
+  "generator": "tools/gen-golden-vectors.mjs",
+  "referenceImplementation": "tools/reference/uc-reference.mjs",
+  "files": [
+    {
+      "path": "generated/source/GoldenVectors/UintVectorsV1.luau",
+      "sha256": "2575b60b99a3e6c65e37615e50fa7c9393d1a8d079b93fc9e09c712307771ca0"
+    },
+    {
+      "path": "generated/source/GoldenVectors/HashVectorsV1.luau",
+      "sha256": "0cc4410eb4bf8c6500489ba236b811e513b550ba19241dc144ce8bc9e53ad862"
+    },
+    {
+      "path": "generated/source/GoldenVectors/SeedVectorsV1.luau",
+      "sha256": "19fefecc86b6e1699b4d90dd827397c649f9a2708cf7fc67d804f5c47825100f"
+    },
+    {
+      "path": "generated/source/GoldenVectors/RngVectorsV1.luau",
+      "sha256": "d4837dba95766d4b5804210a9023c4880d98e6f67296e0ba4c6dbeb8adaba01d"
+    },
+    {
+      "path": "generated/source/GoldenVectors/CanonicalVectorsV1.luau",
+      "sha256": "7b32997d2dd223b16cec07e22a6aad58a75350568cf7b4604466540a52da888d"
+    }
+  ]
+}

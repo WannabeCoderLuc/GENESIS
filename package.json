@@ -1,0 +1,23 @@
+﻿{
+  "name": "universe-creator-genesis-tools",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Zero-dependency repository tooling for Universe Creator: Genesis (see docs/TOOLCHAIN.md).",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "gen:vectors": "node tools/gen-golden-vectors.mjs",
+    "check:vectors": "node tools/gen-golden-vectors.mjs --check",
+    "lint:policy": "node tools/lint-policy.mjs",
+    "test:tools": "node --test \"tools/tests/**/*.test.mjs\"",
+    "studio:manifest": "node tools/studio-sync/build-manifest.mjs",
+    "studio:serve": "node tools/studio-sync/serve.mjs",
+    "horus:pin": "node tools/horus-pin.mjs",
+    "horus:verify": "node tools/horus-pin.mjs verify",
+    "rojo:build": "tools\\bin\\rojo.exe build default.project.json -o build/genesis.rbxl",
+    "check": "npm run test:tools && npm run check:vectors && npm run lint:policy && npm run horus:verify"
+  }
+}
+
