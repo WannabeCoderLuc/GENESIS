@@ -12,6 +12,7 @@
         "$path": "src/ReplicatedStorage/Shared"
       },
       "Packages": {
+        "$className": "Folder",
         "Cryptography": {
           "$path": "vendor/Horus/src/ReplicatedStorage/Packages/Cryptography"
         },
