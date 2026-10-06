@@ -90,6 +90,10 @@ local ErrorCodes = {
 
 	-- feature flags
 	FLAG_UNKNOWN = "FLAG_UNKNOWN",
+
+	-- first star
+	FIRST_STAR_ALREADY_IGNITED = "FIRST_STAR_ALREADY_IGNITED",
+	FIRST_STAR_NOT_FOUND = "FIRST_STAR_NOT_FOUND",
 }
 
 return table.freeze(ErrorCodes)
