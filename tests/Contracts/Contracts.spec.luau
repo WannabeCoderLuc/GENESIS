@@ -133,7 +133,7 @@ return function(t: TestContext.TestContext)
 	end)
 
 	t.test("fuzz corpus: random noise on contracts is rejected safely", function()
-		local rng = Rng.new(expect.isOk(Seed.fromHex("fuzzc0rpus000000")))
+		local rng = Rng.new(expect.isOk(Seed.fromHex("f000c00000000000")))
 		
 		local function generateRandomValue(depth: number): any
 			if depth > 4 then return "leaf" end

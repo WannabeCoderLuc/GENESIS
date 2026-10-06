@@ -10,12 +10,29 @@
       "$className": "ReplicatedStorage",
       "Shared": {
         "$path": "src/ReplicatedStorage/Shared"
+      },
+      "Packages": {
+        "Cryptography": {
+          "$path": "vendor/Horus/src/ReplicatedStorage/Packages/Cryptography"
+        },
+        "Cryptography.luau": {
+          "$path": "vendor/Horus/src/ReplicatedStorage/Packages/Cryptography.luau"
+        },
+        "Horus": {
+          "$path": "vendor/Horus/src/ReplicatedStorage/Packages/Horus"
+        },
+        "Horus.luau": {
+          "$path": "vendor/Horus/src/ReplicatedStorage/Packages/Horus.luau"
+        }
       }
     },
     "ServerScriptService": {
       "$className": "ServerScriptService",
       "Server": {
         "$path": "src/ServerScriptService/Server"
+      },
+      "Horus": {
+        "$path": "vendor/Horus/src/ServerScriptService/Horus"
       }
     },
     "ServerStorage": {

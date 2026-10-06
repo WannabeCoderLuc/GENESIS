@@ -29,11 +29,11 @@ boundary and compatibility plan (upstream untouched), and a minimal Studio serve
 | 6 | Deterministic seed derivation | done: `Seed` (UC-SEED-V1) |
 | 7 | Named RNG streams (cosmetic cannot alter canonical) | done: `Rng`, `RngStreams` |
 | 8 | Golden vectors + determinism tests | done: 58 tests, see below |
-| 9 | Versioned contracts (PlayerProfileV1, UniverseManifestV1, CommandEnvelopeV1, UniverseAddressV1) | next |
-| 10 | In-memory persistence repository + migration harness | next |
-| 11 | Service composition / lifecycle skeleton | next |
-| 12 | Horus adapter boundary + compatibility test plan | next (upstream inspected, findings recorded below) |
-| 13 | Studio bootstrap + playtest | next (sync + Edit-mode test run proven) |
+| 9 | Versioned contracts (PlayerProfileV1, UniverseManifestV1, CommandEnvelopeV1, UniverseAddressV1) | done |
+| 10 | In-memory persistence repository + migration harness | done |
+| 11 | Service composition / lifecycle skeleton | done |
+| 12 | Horus adapter boundary + compatibility test plan | done |
+| 13 | Studio bootstrap + playtest | done |
 | 14 | ADRs and docs | ongoing (ADR-001..003 written) |
 | 15 | All gates | partial, see table |
 
@@ -41,7 +41,7 @@ boundary and compatibility plan (upstream untouched), and a minimal Studio serve
 
 | Check | Result | Command / evidence |
 |---|---|---|
-| Luau specs in Studio VM | **58 / 58 passed**, 0.136 s | suites: Uint64 8, Hash64 6, Seed 12, Rng 12, RngStreams 9, CanonicalEncode 11 |
+| Luau specs in Studio VM | **75 / 75 passed** | suites: Uint64 8, Hash64 6, Seed 12, Rng 12, RngStreams 9, CanonicalEncode 11, Contracts 6, InMemoryRepository 3, MigrationHarness 3, Lifecycle 5 |
 | Reference anchored to published vectors | 6 / 6 passed | `npm run test:tools` (FNV-1a-64 "", "a", "foobar"; SplitMix64 from 0) |
 | Golden vectors up to date | pass | `npm run check:vectors` (5 sets) |
 | Selene 0.32.0 | 0 errors, 0 warnings, 0 parse errors | `tools/bin/selene.exe src tests` |
